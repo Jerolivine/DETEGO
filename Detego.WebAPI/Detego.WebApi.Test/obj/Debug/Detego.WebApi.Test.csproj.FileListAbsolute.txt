@@ -1,0 +1,17 @@
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\bin\Debug\tr\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\bin\Debug\tr\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\bin\Debug\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\bin\Debug\Detego.WebApi.Test.dll
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\bin\Debug\Detego.WebApi.Test.pdb
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\obj\Debug\Detego.WebApi.Test.csprojAssemblyReference.cache
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\obj\Debug\Detego.WebApi.Test.csproj.CoreCompileInputs.cache
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\obj\Debug\Detego.WebApi.Test.csproj.CopyComplete
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\obj\Debug\Detego.WebApi.Test.dll
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebApi.Test\obj\Debug\Detego.WebApi.Test.pdb

@@ -1,0 +1,180 @@
+<div class="col-md-3 col-lg-3">
+<form
+  #addStoreForm="ngForm"
+  (ngSubmit)="onSubmit(addStoreForm)"
+  class="form-register"
+>
+  <div class="text-center mb-4">
+    <h1 class="h3 mb-3 font-weight-normal">Add New Store</h1>
+  </div>
+
+  <div class="form-label-group mb-3">
+    <input
+      type="text"
+      id="Name"
+      class="form-control"
+      placeholder="Store Name"
+      [(ngModel)]="model.Name"
+      #Name="ngModel"
+      name="Name"
+      required=""
+      autofocus=""
+    />
+    <div *ngIf="Name.invalid && Name.dirty" class="alert alert-danger">
+      Store Name is required
+    </div>
+  </div>
+
+  <div class="form-label-group mb-3">
+    <input
+      type="email"
+      pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+      id="Email"
+      class="form-control"
+      placeholder="Email"
+      [(ngModel)]="model.Email"
+      #Email="ngModel"
+      name="Email"
+      required=""
+      autofocus=""
+      ng-pattern="/^[0-9]{1,5}$/"
+    />
+    <div
+      *ngIf="Email.errors?.required && Email.touched"
+      class="alert alert-danger"
+    >
+      Email is required
+    </div>
+    <div
+      *ngIf="Email.errors?.pattern && Email.touched"
+      class="alert alert-danger"
+    >
+      Email is invalid
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="form-label-group mb-3">
+    <input
+      type="number"
+      id="BackStore"
+      class="form-control"
+      placeholder="Back Store"
+      [(ngModel)]="model.BackStore"
+      #BackStore="ngModel"
+      name="BackStore"
+      required=""
+      autofocus=""
+    />
+    <div
+      *ngIf="BackStore.invalid && BackStore.dirty"
+      class="alert alert-danger"
+    >
+      Back Store is required
+    </div>
+  </div>
+
+  <div class="form-label-group mb-3">
+    <input
+      type="number"
+      id="FrontStore"
+      class="form-control"
+      placeholder="Front Store"
+      [(ngModel)]="model.FrontStore"
+      #FrontStore="ngModel"
+      name="FrontStore"
+      required=""
+      autofocus=""
+    />
+    <div
+      *ngIf="FrontStore.invalid && FrontStore.dirty"
+      class="alert alert-danger"
+    >
+      Back Store is required
+    </div>
+  </div>
+
+  <div class="form-label-group mb-3">
+    <input
+      type="number"
+      id="ShoppingWindow"
+      class="form-control"
+      placeholder="Shopping Window"
+      [(ngModel)]="model.ShoppingWindow"
+      #ShoppingWindow="ngModel"
+      name="ShoppingWindow"
+      required=""
+      autofocus=""
+    />
+    <div
+      *ngIf="ShoppingWindow.invalid && ShoppingWindow.dirty"
+      class="alert alert-danger"
+    >
+      Shopping Window is required
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="form-label-group mb-3">
+    <label class="checkbox-inline">Country Code</label>
+    <select
+      name="CountryCode"
+      #CountryCode="ngModel"
+      class="form-control"
+      [(ngModel)]="model.CountryCode"
+      required
+    >
+      <option value="" disabled>Choose a CountryCode</option>
+      <option
+        *ngFor="let countryCode of countryCodes"
+        [ngValue]="countryCode.id"
+      >
+        {{ countryCode.name }}
+      </option>
+    </select>
+    <div
+      *ngIf="CountryCode.required && CountryCode.dirty"
+      class="alert alert-danger"
+    >
+      Country Code is required
+    </div>
+  </div>
+
+  <div class="form-label-group mb-3">
+    <label class="checkbox-inline">Category</label>
+    <select
+      name="Category"
+      #Category="ngModel"
+      class="form-control"
+      [(ngModel)]="model.Category"
+      required
+    >
+      <option value="" disabled>Choose a category</option>
+      <option *ngFor="let category of categories" [ngValue]="category.id">
+        {{ category.name }}
+      </option>
+    </select>
+    <div *ngIf="Category.required && Category.dirty" class="alert alert-danger">
+      Category is required
+    </div>
+  </div>
+
+  <div class="alert alert-danger" role="alert" *ngIf="errors.length > 0">
+    <ul>
+      <li *ngFor="let error of errors">
+        {{ error }}
+      </li>
+    </ul>
+  </div>
+
+  <button
+    class="btn btn-lg btn-primary btn-block"
+    [disabled]="!addStoreForm.valid"
+    type="submit"
+  >
+    Add Store
+  </button>
+</form>
+</div>

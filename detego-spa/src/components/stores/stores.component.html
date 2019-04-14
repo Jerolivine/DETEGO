@@ -1,0 +1,44 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<section id="tabs" class="project-tab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <nav>
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                <span class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Stores</span>
+                            </div>
+                        </nav>
+
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <table class="table" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th *ngFor="let header of headerList">{{header}}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let store of stores">
+                                            <td>{{store.name}}</td>
+                                            <td>{{store.email}}</td>
+                                            <td>{{store.category}}</td>
+                                            <td>{{store.countryCode}}</td>
+                                            <td>
+                                                <a class="btn btn-success"  routerLink="../storeUpdate/{{store.id}}">Edit</a>
+                                            </td>
+                                        </tr>
+                                            
+                                    </tbody>
+                                </table>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3"></div>
+
+                </div>
+            </div>
+        </section>

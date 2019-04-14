@@ -1,0 +1,50 @@
+Database Name = DetegoDb
+
+USE [DetegoDb]
+
+CREATE TABLE [dbo].[Category] (
+    [Id]   INT          IDENTITY (1, 1) NOT NULL,
+    [Name] VARCHAR (50) NOT NULL
+);
+
+CREATE TABLE [dbo].[CountryCode] (
+    [Id]   INT         IDENTITY (1, 1) NOT NULL,
+    [Name] VARCHAR (5) NOT NULL
+);
+
+CREATE TABLE [dbo].[ReportType] (
+    [Id]   INT          IDENTITY (1, 1) NOT NULL,
+    [Name] VARCHAR (50) NULL
+);
+
+CREATE TABLE [dbo].[Store] (
+    [Id]            INT           IDENTITY (1, 1) NOT NULL,
+    [Name]          NVARCHAR (50) NOT NULL,
+    [Email]         NVARCHAR (50) NOT NULL,
+    [UserId]        INT           NOT NULL,
+    [CategoryId]    INT           NULL,
+    [CountryCodeId] INT           NULL
+);
+
+CREATE TABLE [dbo].[StoreStockDetail] (
+    [Id]                  INT            IDENTITY (1, 1) NOT NULL,
+    [BackStore]           INT            NOT NULL,
+    [FrontStore]          INT            NOT NULL,
+    [ShoppingWindow]      INT            NOT NULL,
+    [Accuracy]            DECIMAL (6, 3) NOT NULL,
+    [OnFloorAvailability] DECIMAL (6, 3) NOT NULL,
+    [MeanAgeInDays]       INT            NOT NULL,
+    [StoreId]             INT            NOT NULL,
+    [TotalStock]          AS             (([BackStore]+[FrontStore])+[ShoppingWindow])
+);
+
+CREATE TABLE [dbo].[SystemUser] (
+    [Id]        INT           IDENTITY (1, 1) NOT NULL,
+    [UserName]  NVARCHAR (50) NOT NULL,
+    [Password]  NVARCHAR (50) NOT NULL,
+    [FirstName] NVARCHAR (50) NOT NULL,
+    [LastName]  NVARCHAR (50) NOT NULL
+);
+
+
+

@@ -1,0 +1,46 @@
+
+<form #signUpForm="ngForm" (ngSubmit)="onSubmit(signUpForm)" class="form-register">
+  
+  <div class="text-center mb-4">
+    <h1 class="h3 mb-3 font-weight-normal">SignUp</h1>
+  </div>
+
+  <div class="form-label-group mb-3">
+    <input type="email" id="UserName" class="form-control" placeholder="UserName" [(ngModel)]="model.UserName" #UserName="ngModel" name="UserName" required="" autofocus="">
+    <div *ngIf="UserName.invalid&&UserName.dirty" class="alert alert-danger">UserName is required</div>
+  </div>
+
+  <div class="form-label-group">
+    <input type="password" id="Password" class="form-control" placeholder="Password" [(ngModel)]="model.Password" #Password="ngModel" name="Password" required="">
+    <div *ngIf="Password.invalid&&Password.dirty" class="alert alert-danger">Password is required</div>
+  </div>
+
+  <div class="form-label-group">
+    <input type="password" id="PasswordRepeat" class="form-control" placeholder="Password Repeat" [(ngModel)]="passwordRepeat" #PasswordRepeat="ngModel" name="PasswordRepeat" required appConfirmEqualValidator="Password">
+    <div *ngIf="PasswordRepeat.invalid&&PasswordRepeat.dirty" class="alert alert-danger">Password is required</div>
+    <div *ngIf="PasswordRepeat.errors?.notEqual" class="alert alert-danger">Password and Password Repeat doesn't match</div>
+  </div>
+   
+  <div class="form-label-group">
+    <input type="text" id="FirstName" class="form-control" placeholder="First Name" [(ngModel)]="model.FirstName" #FirstName="ngModel" name="FirstName" required="">
+    <div *ngIf="FirstName.invalid&&FirstName.dirty" class="alert alert-danger">First Name is required</div>
+  </div>
+
+  <div class="form-label-group">
+    <input type="text" id="LastName" class="form-control" placeholder="Last Name" [(ngModel)]="model.LastName" #LastName="ngModel" name="LastName" required="">
+    <div *ngIf="LastName.invalid&&LastName.dirty" class="alert alert-danger">Last Name is required</div>
+  </div>  
+
+  <div class="alert alert-danger" role="alert" *ngIf="errors.length > 0">
+      <ul>
+          <li *ngFor="let error of errors">
+              {{ error }}
+          </li>
+      </ul>
+  </div>
+  
+  <button class="btn btn-lg btn-primary btn-block" [disabled]="!signUpForm.valid" type="submit">Sign Up</button>
+  <a class="btn btn-lg  btn-primary btn-block" routerLink="/login">Log in</a>
+  <p class="mt-5 mb-3 text-muted text-center">© 2017-2019</p>
+
+</form>

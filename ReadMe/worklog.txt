@@ -1,0 +1,32 @@
+Total Time Spent: 26 h
+Total Time Spent on Back-End : 10 h
+Total Time Spent on Front-End : 16 h
+
+Back-End Tasks
+
+Sign-up repository developing and test : 2h
+Login repository developing and test : 2h
+Authorization repository 
+      JWT token creation 1h
+Store repository developing
+	Add Store 1h
+	Update store
+		Update store function development and test 1h
+		Barchart report 4h
+	Store List : 1h
+	
+
+Front-End Tasks
+
+Sign-up page developing and first ui template : 2h
+Login  page developing and first ui template : 2h
+Main application page routing and menu template development: 4h
+Store
+	Add Store Page development and test 2h
+	Update store page
+		update store information development and test 2h
+		Barchart ui development : 4h
+	Store List
+		- table creation 2h
+		- edit button and parent page routing 3h
+		

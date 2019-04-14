@@ -1,0 +1,14 @@
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebAPI\bin\Debug\netcoreapp2.1\Detego.WebAPI.deps.json
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebAPI\bin\Debug\netcoreapp2.1\Detego.WebAPI.runtimeconfig.json
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebAPI\bin\Debug\netcoreapp2.1\Detego.WebAPI.runtimeconfig.dev.json
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebAPI\bin\Debug\netcoreapp2.1\Detego.WebAPI.dll
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebAPI\obj\Debug\netcoreapp2.1\Detego.WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebAPI\obj\Debug\netcoreapp2.1\Detego.WebAPI.RazorAssemblyInfo.cache
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebAPI\obj\Debug\netcoreapp2.1\Detego.WebAPI.RazorAssemblyInfo.cs
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebAPI\obj\Debug\netcoreapp2.1\Detego.WebAPI.AssemblyInfoInputs.cache
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebAPI\obj\Debug\netcoreapp2.1\Detego.WebAPI.AssemblyInfo.cs
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebAPI\obj\Debug\netcoreapp2.1\Detego.WebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebAPI\bin\Debug\netcoreapp2.1\Detego.WebAPI.pdb
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebAPI\obj\Debug\netcoreapp2.1\Detego.WebAPI.dll
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebAPI\obj\Debug\netcoreapp2.1\Detego.WebAPI.pdb
+C:\Users\Arda Şentunalı\source\repos\Detego.WebAPI\Detego.WebAPI\obj\Debug\netcoreapp2.1\Detego.WebAPI.csprojAssemblyReference.cache
